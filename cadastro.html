@@ -12,7 +12,7 @@
 </head>
 
 <body class="mainlogin">
-    <div class="container">
+    <div class="container-cad">
         <div class="login">
             <a href="principal.html"><img class="logo" src="img/logo.png"></a>
             <h2 class="titlecad">Cadastre-se</h2>
@@ -21,10 +21,39 @@
                 <input class="campos" type="text" name="nome"placeholder="Nome">
                 <input class="campos" type="cep" name="cep"placeholder="CEP">
                 <input class="campos" type="text" name="rua"placeholder="Rua">
-                <input class="campos" type="number" name="num"placeholder="nº">
-                <input class="campos" type="text" name="bairro"placeholder="Bairro">
+                <input class="campesq" type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" name="num"placeholder="Nº">
+                <input class="campdir" type="text" name="bairro"placeholder="Bairro">
+                <select class="campos" name="estado" placeholder="Estado">
+                    <option class="opt" value="" selected data-default>Selecione o Estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
                 <input class="campos" type="text" name="cidade"placeholder="Cidade">
-                <input class="campos" type="text" name="estado"placeholder="Estado">
                 <input class="campos" type="password" name="password"placeholder="Senha">
                 <input class="campos" type="password" name="password"placeholder="Confirmar Senha">
 
