@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+    <title>Cadastro</title>
 </head>
-<body>
-    
+
+<body class="mainlogin test2">
+    <div class="skin">
+        <div class="head test">
+            <div class="esquerdo">
+                <a href="principal.html">Monitora System</a>
+            </div>
+            <div class="direito">
+                <p class="menubar"><a class="btsn" href="principal.html">Sair</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-pfl">
+        <div class="login">
+            <a href="principal.html"><img class="logo" src="img/logo.png"></a>
+            <h2 class="titlecad">Dados Cadastrais</h2>
+            <form>
+
+                <input class="campos" disabled="" type="text" name="email" placeholder="E-mail">
+                <input class="campos" disabled="" type="text" name="nome"placeholder="Nome">
+                <input class="campos" disabled="" type="cep" oninput="mascara(this, 'cep')" name="cep"placeholder="CEP">
+                <input class="campos" disabled="" type="text" name="rua"placeholder="Rua">
+                <input class="campesq" disabled="" type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" name="num"placeholder="Nº">
+                <input class="campdir" disabled="" type="text" name="bairro"placeholder="Bairro">
+                <input class="campos" disabled="" type="text" name="estado"placeholder="Estado">
+                <input class="campos" disabled="" type="text" name="cidade"placeholder="Cidade">
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>

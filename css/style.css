@@ -19,6 +19,14 @@ body {
 
 }
 
+.test{
+	background: linear-gradient(to bottom, #a4d0f1, #c5a4f1) no-repeat center top fixed;
+}
+
+.test2{
+	background: whitesmoke;
+}
+
 .formulario {
 	width: 70%;
 	margin: 30px auto;
@@ -120,6 +128,20 @@ campos:focus{
 	animation-duration: 0.8s;
 }
 
+.container-pfl	 {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	margin-bottom: 4%;
+	background-color: white;
+	padding: 20px 0px 70px 0px;
+	border-radius: 15px;
+	box-shadow: 0 0 30px lightslategray;
+	animation-name: fade;
+	animation-duration: 0.8s;
+}
+
 @keyframes fade{
 	from{
 		opacity: 0;
@@ -158,6 +180,7 @@ campos:focus{
 	background-image: linear-gradient(40deg,#a4d0f1, #c5a4f1);
 	background-size: 100%;
 	margin: 0;
+	box-shadow: 0 0 10px lightslategray;
 }
 
 .head{

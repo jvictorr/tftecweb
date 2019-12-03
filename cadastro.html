@@ -12,6 +12,27 @@
 </head>
 
 <body class="mainlogin">
+    <script>
+        function mascara(i,t){
+
+            var v = i.value;
+
+            if(isNaN(v[v.length-1])){
+                i.value = v.substring(0, v.length-1);
+                return;
+            }
+
+            if(t == "data"){
+                i.setAttribute("maxlength", "10");
+                if (v.length == 2 || v.length == 5) i.value += "/";
+            }
+
+            if(t == "cep"){
+                i.setAttribute("maxlength", "9");
+                if (v.length == 5) i.value += "-";
+            }
+        }
+    </script>
     <div class="container-cad">
         <div class="login">
             <a href="principal.html"><img class="logo" src="img/logo.png"></a>
@@ -19,7 +40,7 @@
             <form>
                 <input class="campos" type="text" name="email" placeholder="E-mail">
                 <input class="campos" type="text" name="nome"placeholder="Nome">
-                <input class="campos" type="cep" name="cep"placeholder="CEP">
+                <input class="campos" type="cep" oninput="mascara(this, 'cep')" name="cep"placeholder="CEP">
                 <input class="campos" type="text" name="rua"placeholder="Rua">
                 <input class="campesq" type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" name="num"placeholder="Nº">
                 <input class="campdir" type="text" name="bairro"placeholder="Bairro">
